@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Width="1020" 
+        Height="800"
+        x:Class="AvaloniaProject.MainWindow">
+        <Grid ShowGridLines="True"
+        RowDefinitions="Auto,*"
+        ColumnDefinitions="*, 250">
+            <StackPanel Orientation = "Horizontal" Spacing="10" Grid.Row="0" Grid.Column="0" Margin = "10">
+                <Menu>Home</Menu>
+                <Menu>About</Menu>
+                <Menu>Blog's Main Topic 1</Menu>
+                <Menu>Blog's Main Topic 2</Menu>
+                <Menu>Blog's Main Topic 3</Menu>
+                <Menu>Associated</Menu>
+            </StackPanel>
+
+            <StackPanel Orientation = "Horizontal" HorizontalAlignment = "Right" Spacing="10" Grid.Row="0" Grid.Column="1" Margin = "0 0 10 0">
+                <Menu>RSS</Menu>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Margin = "10 10 10 10">
+                <TextBlock>
+                Article 1
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap"  Margin = "0 10 0 0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus eros. Quisque ut neque condimentum ipsum eleifend euismod vel ac ligula. Vivamus urna diam, sodales eu est in, iaculis tempor nibh. Curabitur pulvinar ligula et velit faucibus imperdiet. Sed ex sem, bibendum sit amet vehicula ac, euismod at nulla. Praesent finibus augue ultrices, lobortis libero quis, lobortis ipsum. Mauris aliquam nulla porta, mattis urna non, hendrerit mi.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap">
+                Donec ultricies urna efficitur accumsan rhoncus. Quisque eget mauris sit amet libero mattis blandit nec eget odio. In placerat turpis eu dictum dapibus. Fusce consectetur mauris sit amet ante imperdiet eleifend consequat non augue. Praesent nibh leo, posuere et augue eget, vulputate efficitur dui. Suspendisse iaculis erat at viverra facilisis. Donec sit amet dolor vitae metus porta volutpat. Fusce hendrerit lectus non ornare lobortis. Sed mi nibh, venenatis et ultricies vel, ultrices at tellus. Cras in diam arcu. Morbi eget odio libero. Curabitur iaculis vel diam in fermentum. Proin finibus consequat nisl hendrerit tincidunt. Sed vel dolor id dui placerat convallis. Suspendisse ante nibh, pulvinar quis erat vel, laoreet lacinia ipsum.
+                </TextBlock>
+
+                <Image Source = "\Image\r.jpg" MaxHeight = "300" MaxWidth = "300" Margin = "0 100 0 0 "></Image>
+
+            </StackPanel>
+
+            <DockPanel VerticalAlignment = "Bottom" Grid.Row="1" Grid.Column="0">
+                    <TextBlock Margin = "10 0 0 0">Tags:</TextBlock>
+                    <TextBlock Margin = "10 0 0 0">Tag1  </TextBlock>
+                    <TextBlock Margin = "10 0 0 0">Tag2  </TextBlock>
+                    <TextBlock Margin = "10 0 0 0">Tag3</TextBlock>
+                    <TextBlock TextAlignment = "Right">Rate this article: 4/5</TextBlock>
+            </DockPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin = "10 10 10 10">
+                <TextBlock TextWrapping="Wrap">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a velit eu ligula euismod porta vulputate non lacus. Nulla tortor sem, faucibus eu nulla sed, elementum aliquet arcu. Maecenas dignissim tortor sed ex imperdiet viverra. Phasellus nec arcu at tortor auctor tempor non vel purus. In id nisi a urna commodo tincidunt. Morbi vel dui sem. Aenean viverra risus ut cursus tempus.
+                </TextBlock>
+                <TextBlock HorizontalAlignment = "Right" TextDecorations = "Underline">More</TextBlock>
+                <TextBlock HorizontalAlignment = "Right">Yesterday</TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin = "0 10 0 0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a velit eu ligula euismod porta vulputate non lacus. Nulla tortor sem, faucibus eu nulla sed, elementum aliquet arcu. Maecenas dignissim tortor sed ex imperdiet viverra. Phasellus nec arcu at tortor auctor tempor non vel purus. In id nisi a urna commodo tincidunt. Morbi vel dui sem. Aenean viverra risus ut cursus tempus.
+                </TextBlock>
+                <TextBlock HorizontalAlignment = "Right" TextDecorations = "Underline">More</TextBlock>
+                <TextBlock HorizontalAlignment = "Right">1 week ago</TextBlock>
+            </StackPanel>
+        </Grid>
+</Window>
